@@ -9,7 +9,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 RUN mkdir /usr/src/app && cd /usr/src/app &&  git clone https://github.com/mrvautin/adminMongo.git && cd adminMongo && npm install --prod
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/app/adminMongo
 
 EXPOSE 1234
 
